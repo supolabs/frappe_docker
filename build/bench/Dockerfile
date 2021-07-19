@@ -2,7 +2,7 @@
 FROM debian:buster-slim
 
 ARG GIT_REPO=https://github.com/frappe/bench.git
-ARG GIT_BRANCH=develop
+ARG GIT_BRANCH=version-13
 
 LABEL author=frappé
 

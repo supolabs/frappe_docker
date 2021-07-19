@@ -1,7 +1,7 @@
 FROM alpine/git
 
-ARG GIT_REPO=https://github.com/frappe/frappe.git
-ARG GIT_BRANCH=develop
+ARG GIT_REPO=https://github.com/supolabs/frappe.git
+ARG GIT_BRANCH=version-13
 
 RUN git clone ${GIT_REPO} /opt/frappe -b ${GIT_BRANCH} --depth 1
 

@@ -13,7 +13,7 @@ echo -ne "frappe\n${APP_NAME}" >/home/frappe/frappe-bench/sites/apps.txt
 
 mkdir -p apps
 cd apps
-git clone --depth 1 https://github.com/frappe/frappe -b ${FRAPPE_BRANCH}
+git clone --depth 1 https://github.com/supolabs/frappe -b ${FRAPPE_BRANCH}
 git clone --depth 1 ${APP_REPO} ${BRANCH} ${APP_NAME}
 
 echo "Install frappe NodeJS dependencies . . ."

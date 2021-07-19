@@ -4,8 +4,8 @@
 # by Website Manager role in Frappe Framework
 FROM python:3.7-slim-buster
 
-ARG GIT_REPO=https://github.com/frappe/frappe
-ARG GIT_BRANCH=develop
+ARG GIT_REPO=https://github.com/supolabs/frappe
+ARG GIT_BRANCH=version-13
 
 ENV NVM_DIR=/root/.nvm
 ENV NODE_VERSION=14.17.0

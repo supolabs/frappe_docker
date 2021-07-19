@@ -1,12 +1,14 @@
 ARG NODE_IMAGE_TAG=14-buster-slim
-ARG DOCKER_REGISTRY_PREFIX=frappe
-ARG IMAGE_TAG=develop
+ARG DOCKER_REGISTRY_PREFIX=supolabs
+ARG IMAGE_TAG=latest
 
 FROM node:${NODE_IMAGE_TAG}
 
-ARG GIT_REPO=https://github.com/frappe/erpnext
-ARG GIT_BRANCH=develop
-ARG FRAPPE_BRANCH=${GIT_BRANCH}
+RUN echo 3
+
+ARG GIT_REPO=https://github.com/supolabs/erpnext
+ARG GIT_BRANCH=version-13
+ARG FRAPPE_BRANCH=version-13
 
 COPY build/erpnext-nginx/install_app.sh /install_app
 RUN chmod +x /install_app && \

@@ -65,6 +65,6 @@ It takes care of complete setup to develop with Frappe/ERPNext and Bench, Includ
 ## Contributing
 
 - [Frappe Docker Images](CONTRIBUTING.md)
-- [Frappe Framework](https://github.com/frappe/frappe#contributing)
-- [ERPNext](https://github.com/frappe/erpnext#contributing)
+- [Frappe Framework](https://github.com/supolabs/frappe#contributing)
+- [ERPNext](https://github.com/supolabs/erpnext#contributing)
 - [frappe/bench](https://github.com/frappe/bench)
