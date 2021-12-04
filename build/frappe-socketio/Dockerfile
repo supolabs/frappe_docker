@@ -3,6 +3,8 @@ FROM alpine/git
 ARG GIT_REPO=https://github.com/supolabs/frappe.git
 ARG GIT_BRANCH=version-13
 
+RUN echo 18
+
 RUN git clone ${GIT_REPO} /opt/frappe -b ${GIT_BRANCH} --depth 1
 
 FROM node:buster-slim

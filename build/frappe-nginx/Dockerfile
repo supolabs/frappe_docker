@@ -24,6 +24,8 @@ WORKDIR /home/frappe/frappe-bench
 RUN mkdir -p /home/frappe/frappe-bench/sites \
     && echo "frappe" > /home/frappe/frappe-bench/sites/apps.txt
 
+RUN echo 18
+
 RUN mkdir -p apps sites/assets/css  \
     && cd apps \
     && git clone --depth 1 ${GIT_REPO} --branch $GIT_BRANCH
