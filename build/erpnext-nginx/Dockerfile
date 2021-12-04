@@ -4,7 +4,7 @@ ARG IMAGE_TAG=latest
 
 FROM node:${NODE_IMAGE_TAG}
 
-RUN echo 18
+RUN echo 19
 
 ARG GIT_REPO=https://github.com/supolabs/erpnext
 ARG GIT_BRANCH=version-13
