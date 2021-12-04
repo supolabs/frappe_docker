@@ -1,5 +1,5 @@
 ARG IMAGE_TAG=latest
-ARG DOCKER_REGISTRY_PREFIX=supolabs
+ARG DOCKER_REGISTRY_PREFIX=ghcr.io/supolabs
 FROM ${DOCKER_REGISTRY_PREFIX}/frappe-worker:${IMAGE_TAG}
 
 ARG GIT_REPO=https://github.com/supolabs/erpnext

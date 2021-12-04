@@ -16,6 +16,8 @@ frappe-push: frappe-build
 	docker push ghcr.io/supolabs/frappe-worker:latest
 	docker push ghcr.io/supolabs/frappe-nginx:latest
 
-deploy: frappe-push erpnext-push
-	push && sudo ssh -i "supo-labs-development.pem" ubuntu@ec2-3-108-255-113.ap-south-1.compute.amazonaws.com "cd supolabs && docker-compose pull && docker-compose down -t 1 && docker-compose up -d"
+push: frappe-push erpnext-push
+
+deploy: push
+	cd ../ssh && sudo ssh -i "supo-labs-development.pem" ubuntu@ec2-3-108-255-113.ap-south-1.compute.amazonaws.com "cd supolabs && docker-compose pull && docker-compose down -t 1 && docker-compose up -d"
 	echo "Deployed"
